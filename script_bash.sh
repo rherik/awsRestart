@@ -1,9 +1,9 @@
 #!/bin/bash
 
-yum -y install httpd
+apt install apache2 -y
 
-systemctl enable httpd
+systemctl enable apache2
 
-systemctl start httpd
+systemctl start apache2
 
 echo '<html><h1>Hello From Herik's Web Server!</h1></html>' > /var/www/html/index.html
