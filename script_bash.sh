@@ -1,9 +1,7 @@
 #!/bin/bash
 
-apt install apache2 -y
-
 systemctl enable apache2
 
 systemctl start apache2
 
-echo '<html><h1>Hello From Herik's Web Server!</h1></html>' > /var/www/html/index.html
+curl -X POST -d "nome-Herik Cunha" https://difusaotech.com.br/lab/aws/index.php
